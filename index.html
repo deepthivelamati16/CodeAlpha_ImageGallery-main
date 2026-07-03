@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Nature & City Gallery</h1>
+
+<div class="filter-buttons">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('city')">City</button>
+</div>
+
+<div class="gallery">
+  <!-- Nature Images -->
+  <img src="nature 1.png" class="nature" onclick="openLightbox(this.src)">
+  <img src="nature2.png" class="nature" onclick="openLightbox(this.src)">
+
+  <!-- City Images -->
+  <img src="city1.png" class="city" onclick="openLightbox(this.src)">
+  <img src="city2.png" class="city" onclick="openLightbox(this.src)">
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
